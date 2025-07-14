@@ -37,10 +37,11 @@ project/
 
 - It has a Standardized request validation and response format which help to use by all the modules.
 
-
-```category/
+```
+  category/
   ├── api/              # Contains category-specific routes
   ├── schema/           # Pydantic models
   ├── models/           # SQLAlchemy model: Category
   ├── repository/       # CategoryRepository extending BaseRepository
-  └── service/          # CategoryService extending BaseService ```
+  └── service/          # CategoryService extending BaseService
+```
