@@ -2,7 +2,7 @@
 
 -> Project Structure
 
-'''
+```
 project/
 |
 ├── main.py # Entry point of the FastAPI app
@@ -21,7 +21,7 @@ project/
 │ │ └── service/ # Module-specific service (extends BaseService)
 │
 ├── core/ # database settings, logging, etc. 
-'''
+```
 
 -> Base Repository
 
@@ -38,9 +38,9 @@ project/
 - It has a Standardized request validation and response format which help to use by all the modules.
 
 
-'''category/
+```category/
   ├── api/              # Contains category-specific routes
   ├── schema/           # Pydantic models
   ├── models/           # SQLAlchemy model: Category
   ├── repository/       # CategoryRepository extending BaseRepository
-  └── service/          # CategoryService extending BaseService '''
+  └── service/          # CategoryService extending BaseService ```
