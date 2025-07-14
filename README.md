@@ -40,9 +40,9 @@ project/
 
 ```
   category/
-  ├── api/              # Contains category-specific routes
-  ├── schema/           # Pydantic models
-  ├── models/           # SQLAlchemy model: Category
-  ├── repository/       # CategoryRepository extending BaseRepository
-  └── service/          # CategoryService extending BaseService
+  |-- api/              # Contains category-specific routes
+  |-- schema/           # Pydantic models
+  |-- models/           # SQLAlchemy model: Category
+  |-- repository/       # CategoryRepository extending BaseRepository
+  |-- service/          # CategoryService extending BaseService
 ```
