@@ -5,20 +5,21 @@
 ```
 project/
 |
-├── main.py # Entry point of the FastAPI app
+| --> main.py # Entry point of the FastAPI app
 │
-├── base/ # Reusable base components
-│ ├── schema/ # Base Pydantic models (request/response)
-│ ├── repository/ # BaseRepository with reusable CRUD operations
-│ └── service/ # BaseService that abstracts repository logic
+| --> base/ # Reusable base components
+│ -- schema/ # Base Pydantic models (request/response)
+│ -- repository/ # BaseRepository with reusable CRUD operations
+│ -- service/ # BaseService that abstracts repository logic
+| -- Utils/ 
 │
-├── module/ # Feature modules (e.g : category, expense, etc..)
-│ ├── category/ # Example: Category Module
-│ │ ├── api/ # API routes
-│ │ ├── schema/ # Pydantic request/response models
-│ │ ├── models/ # SQLAlchemy models
-│ │ ├── repository/ # Module-specific repository (extends BaseRepository)
-│ │ └── service/ # Module-specific service (extends BaseService)
+| --> module/ # Feature modules (e.g : category, expense, etc..)
+│ | --> category/ # Example: Category Module
+│ │ -- api/ # API routes
+│ │ -- schema/ # Pydantic request/response models
+│ │ -- models/ # SQLAlchemy models
+│ │ -- repository/ # Module-specific repository (extends BaseRepository)
+│ │ -- service/ # Module-specific service (extends BaseService)
 │
 ├── core/ # database settings, logging, etc. 
 ```
